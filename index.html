@@ -11,23 +11,24 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
 
-    <title>Tata Zinoveva</title>
+    <title>Tata Zen</title>
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="up">
         <header class="blog-header lh-1 py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
-                <div class="col-4 pt-1">
+                <!-- YOUTUBE -->
+                <!-- <div class="col-4 pt-1">
                     <a class="link-secondary" href="#">YouTube</a>
-                </div>
-                <div class="col-4 text-center">
-                    <h1>Tata Zinoveva</h1>
+                </div> -->
+                <div class="col-12 text-center">
+                    <h1>Tata Zen</h1>
                     <p>Languages, education, and coding.</p>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <!-- SEARCH -->
+                    <!-- SEARCH SECTION-->
                     <!-- <a class="link-secondary" href="#" aria-label="Search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
@@ -43,14 +44,17 @@
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
+                <!-- OPENS THE PAGE WITH PROJECTS -->
                 <a class="p-2 link-secondary" href="#">Projects</a>
-                <a class="p-2 link-secondary" href="#">Blog</a>
+                <a class="p-2 link-secondary" href="#blog-post">Blog</a>
+                <!-- CONTACTS FORM -->
                 <a class="p-2 link-secondary" href="#">Contacts</a>
-                <a class="p-2 link-secondary" href="#">Links</a>
+                <a class="p-2 link-secondary" href="#links">Links</a>
             </nav>
         </div>
     </div>
     <main class="container">
+        <!-- THE LAST TWO PROJECTS -->
         <div class="row mb-2">
             <div class="col-md-6">
                 <div
@@ -58,8 +62,7 @@
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">Projects</strong>
                         <h3 class="mb-0">Russian Stress</h3>
-                        <div class="mb-1 text-muted">Date</div>
-                        <p class="card-text mb-auto">Learn Russian Stress system easy</p>
+                        <p class="card-text mb-auto">Learn Russian Stress system in 30 minutes </p>
                         <a href="#" class="stretched-link">RussianStress</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
@@ -74,15 +77,15 @@
                     </div>
                 </div>
             </div>
+            <!-- THE LAST POST AND ABOUT -->
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">Projects</strong>
-                        <h3 class="mb-0">Russian Stress</h3>
-                        <div class="mb-1 text-muted">Date</div>
-                        <p class="card-text mb-auto">Learn Russian Stress system easy</p>
-                        <a href="#" class="stretched-link">RussianStress</a>
+                        <h3 class="mb-0">Russian Alphabet</h3>
+                        <p class="card-text mb-auto">Russian Alphabet made easy</p>
+                        <a href="#" class="stretched-link">RussianAlphabet</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
@@ -96,15 +99,16 @@
                     </div>
                 </div>
             </div>
+            <!-- THE LAST TWO POSTS -->
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">Blog</strong>
                         <h3 class="mb-0">About me</h3>
-                        <div class="mb-1 text-muted">Date</div>
-                        <p class="mb-auto">A long journey to the best job ever </p>
-                        <a href="#" class="stretched-link">Continue reading</a>
+                        <div class="mb-1 text-muted">23.08.2022</div>
+                        <p class="mb-auto">Hi friends!</p>
+                        <a href="#blog-post-august-23" class="stretched-link">Continue reading</a>
                     </div>
                 </div>
             </div>
@@ -113,109 +117,98 @@
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">Blog</strong>
-                        <h3 class="mb-0">About me</h3>
-                        <div class="mb-1 text-muted">Date</div>
-                        <p class="mb-auto">A long journey to the best job ever </p>
-                        <a href="#" class="stretched-link">Continue reading</a>
+                        <h3 class="mb-0">Alphabets intro</h3>
+                        <div class="mb-1 text-muted">08.09.2022</div>
+                        <p class="mb-auto">I learned 4 alphabets</p>
+                        <a href="#blog-post-september-8" class="stretched-link">Continue reading</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row g-5">
             <div class="col-md-12">
-                <article class="blog-post">
-                    <h2 class="blog-post-title mb-1">Sample blog post</h2>
-                    <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+                <article class="blog-post" id="blog-post-august-23">
+                    <h2 class="blog-post-title mb-1">About me</h2>
+                    <p class="blog-post-meta">August 23, 2022 by Tata</p>
 
-                    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap.
-                        Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                    <hr>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
-                        text.</p>
-                    <h2>Blockquotes</h2>
-                    <p>This is an example blockquote in action:</p>
-                    <blockquote class="blockquote">
-                        <p>Quoted text goes here.</p>
-                    </blockquote>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
-                        text.</p>
-                    <h3>Example lists</h3>
-                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                        other highly repetitive body text used throughout. This is an example unordered list:</p>
-                    <ul>
-                        <li>First list item</li>
-                        <li>Second list item with a longer description</li>
-                        <li>Third list item to close it out</li>
-                    </ul>
-                    <p>And this is an ordered list:</p>
-                    <ol>
-                        <li>First list item</li>
-                        <li>Second list item with a longer description</li>
-                        <li>Third list item to close it out</li>
-                    </ol>
-                    <p>And this is a definition list:</p>
-                    <dl>
-                        <dt>HyperText Markup Language (HTML)</dt>
-                        <dd>The language used to describe and define the content of a Web page</dd>
-                        <dt>Cascading Style Sheets (CSS)</dt>
-                        <dd>Used to describe the appearance of Web content</dd>
-                        <dt>JavaScript (JS)</dt>
-                        <dd>The programming language used to build advanced Web sites and applications</dd>
-                    </dl>
-                    <h2>Inline HTML elements</h2>
-                    <p>HTML defines a long list of available inline tags, a complete list of which can be found on the
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer
-                            Network</a>.
+                    <p>Hi friends!</p>
+                    <p>I like linguistics, folklore, literature, traveling, drawing, and music. And I can make simple
+                        interactive web pages for you to learn Russian. One by one, these pages will appear here.</p>
+                    <p>I lived in different countries and had to learn languages and alphabets.
+                        I've found exciting technics to ease the process of remembering and understanding the new
+                        language
+                        in a short time. And I want to share it with you.</p>
+                    <p>I studied Slavic linguistics, literature, and folklore at the university. I had internships,
+                        local
+                        expeditions, and adventurous hitchhiking journeys in my free time.</p>
+                    <p>I started coding for fun in 2021, and finally, I've done some lovely pages to share with you.</p>
+                    <p>I don't have much time because I am working as a linguist on a startup project, and I hope I can
+                        soon show you something more.</p>
+                    <p>Keep in touch!</p>
+
+                    <p><em>With love,
+                            Tata.</em></p>
+
+                </article>
+            </div>
+            <div class="col-md-12">
+                <article class="blog-post" id="blog-post-september-8">
+                    <h2 class="blog-post-title mb-1">Alphabets intro</h2>
+                    <p class="blog-post-meta">September 8, 2022 by Tata</p>
+
+                    <p>I had to learn 4 alphabets, and it was not so hard.</p>
+
+                    <h5>Cyrillic</h5>
+                    <h6>А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я</h6>
+                    <p>Yep, that nice letters that Russians use. I even can read and write cursive. But ha-ha, I don't
+                        have
+                        a
+                        talent, I'm just a native Russian speaker and learned it when I was a kid.</p>
+
+                    <h5>Latin</h5>
+                    <h6>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h6>
+                    <p>I learned English at school, then at the University, then at work. I have no chance of forgetting
+                        it.
                     </p>
-                    <ul>
-                        <li><strong>To bold text</strong>, use <code
-                                class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                        <li><em>To italicize text</em>, use <code
-                                class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                        <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code
-                                class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code
-                                class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.
+
+                    <h5>Georgian</h5>
+                    <h6>Ა Ბ Გ Დ Ე Ვ Ზ Თ Ი Კ Ლ Მ Ნ Ო Პ Ჟ Რ Ს Ტ Უ Ფ Ქ Ღ Ყ Შ Ჩ Ც Ძ Წ Ჭ Ხ Ჯ Ჰ</h6>
+                    <p>I like Georgia and traveled there many times. Unfortunately (or as I think fortunately), people
+                        in Georgia
+                        use these fancy letters.</p>
+
+                    <h5>Armenian</h5>
+                    <h6>Ա Բ Գ Դ Ե Զ Է Ը Թ Ժ Ի Լ Խ Ծ Կ Հ Ձ Ղ Ճ Մ Յ Ն Շ Ո Չ Պ Ջ Ռ Ս Վ Տ Ր Ց Ւ Փ Ք Օ ԵՒ ՈՒ Ֆ</h6>
+                    <p>A country of awesome people and stick-shaped letters. I lived in this country, meaning I had to
+                        learn to write at least my name, surname, and address. </p>
+
+                    <h5>Tips to learn new Alphabets</h5>
+                    <ol>
+                        <li>Start with writing your name, surname, and address. It is easy, comfortable, and useful.
                         </li>
-                        <li>Citations, like <cite>— Mark Otto</cite>, should use <code
-                                class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                        <li><del>Deleted</del> text should use <code
-                                class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins>
-                            text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-                        <li>Superscript <sup>text</sup> uses <code
-                                class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript
-                            <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.
+                        <li>Look for international words and abbreviations like "Internet," "auto," and "TV."</li>
+                        <li>Write the names of people you know</li>
+                        <li>If you live in a foreign country, try to read the signs on the streets.</li>
+                        <li>Learn vowels first (Ex.Eng: A E I O U), then combine each with a new consonant like BA CA
+                            DA.
                         </li>
-                    </ul>
-                    <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-                    <h2>Heading</h2>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
-                        text.</p>
-                    <h3>Sub-heading</h3>
-                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
-                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
-                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
-                        text.</p>
-                    <pre><code>Example code block</code></pre>
-                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
-                        other highly repetitive body text used throughout.</p>
+                    </ol>
+                    <p><em>With love,
+                            Tata.</em></p>
                 </article>
             </div>
         </div>
     </main>
-    <div class="container">
+    <div class="container" id="links">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Link</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Link up</a></li>
+                <li class="nav-item"><a href="https://www.youtube.com/channel/UCh83T7GX5pDdxaMWM7uA9vA"
+                        class="nav-link px-2 text-muted">YouTube</a></li>
+                <li class="nav-item"><a href="https://www.facebook.com/easyrussianforall/"
+                        class="nav-link px-2 text-muted">Facebook</a></li>
+                <li class="nav-item"><a href="https://www.patreon.com/tanyasgettinteractive"
+                        class="nav-link px-2 text-muted">Patreon</a></li>
+                <li class="nav-item"><a href="#up" class="nav-link px-2 text-muted">Up</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2022 Tanya's getting interactive (TGI)</p>
         </footer>
